@@ -5,6 +5,10 @@ A .NET RAG solution demonstrating agent-driven semantic search using Redis and A
 
 ## Getting Started
 
+For this example, I used the embed-v-4-0 and gpt-4.1-nano models. For instructions on deploying these models, see the [Azure documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/how-to/create-model-deployments?pivots=ai-foundry-portal).
+
+Once deployed, update the `model`, `endpoint` , and `apiKey` settings in the appsettings.json file.
+
 To start Redis and RabbitMQ in Docker, run the following command:
 
 `[root]\docker> docker-compose -p dotnet-rag up -d`
